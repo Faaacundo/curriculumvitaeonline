@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #F1F1F1;
+    color:grey;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-end;
+}
+#contenedor{
+    width:75%;
+    left:0;
+    /* FLEXBOX */
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+#perfil{
+    padding: 10px;
+    width:25%;
+    height: 100vh;
+    position: fixed;
+    left:0;
+    /* FLEXBOX */
+    display:flex;
+    flex-flow:column wrap;
+    align-items: flex-end;
+}
+#contenido{
+    padding: 20px;
+    width:85%;
+    max-width: 1500px;
+    height: auto;
+    margin: 10px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    right: 0;
+}
+
+a{
+    text-decoration: none;
+    COLOR:grey;
+    width: 100%;
+}
+.mi-foto{
+    height: auto;
+    width: 80%;
+    max-width: 270px;
+}
+/*********************** BOTONES DEL MENUUU ***********************/
+nav{
+    width:80%;
+    max-width: 270px;
+    font-weight: 300;
+}
+.ripple {
+    outline:1px solid rgba(0, 0, 0, 0.28);
+    width:100%;
+    text-align: right;
+    letter-spacing: .5px;
+    text-decoration: none;
+    color: grey;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+ -webkit-transition: all 300ms;
+   -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+     -o-transition: all 300ms;
+        transition: all 300ms;
+    padding: 6px 12px;
+    background-color:#33373d;
+    
+    /*FLEXVOX*/
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+/*BACKGROUND DEL RIPPLE*/
+.grey {
+    background-color:red;
+}
+.ripple:hover {
+    color: #fff;
+    transform:scale(1.02);
+    z-index: 10;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18);
+    font-size:1.2rem;
+
+}
+
+.ink {
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.animate {
+    -webkit-animation: ripple 0.55s linear;
+    -moz-animation: ripple 0.55s linear;
+    -ms-animation: ripple 0.55s linear;
+    -o-animation: ripple 0.55s linear;
+    animation: ripple 0.55s linear;
+}
+
+@-webkit-keyframes ripple {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2.5);
+    }
+}
+
+@-moz-keyframes ripple {
+    100% {
+        opacity: 0;
+        -moz-transform: scale(2.5);
+    }
+}
+
+@-o-keyframes ripple {
+    100% {
+        opacity: 0;
+        -o-transform: scale(2.5);
+    }
+}
+
+@keyframes ripple {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+/*--------------------------------- ICONOS DE MENU -------------------------------------------*/
+.icono {
+    width: 35px;
+    height: 35px;
+    float: left;
+    background-size: cover;
+}
+
+.imagen-sobre-mi{
+    background-image: url('../img/sobre-mi.png');
+    transition: all 180ms;
+}
+.imagen-educacion{
+    background-image: url('../img/educacion.png');
+    transition: all 180ms;
+}
+.imagen-experiencia-laboral{
+    background-image: url('../img/experiencia-laboral.png');
+    transition: all 180ms;
+}
+.imagen-hobbie {
+    background-image: url('../img/hobbie.png');
+    transition: all 180ms;
+}
+.imagen-portofolio {
+    background-image: url('../img/portofolio.png');
+    transition: all 180ms;
+}
+nav div:hover .imagen-sobre-mi {
+    background-image: url('../img/sobre-mi-hover.png');
+    transform:scale(1.2);
+}
+nav div:hover .icono.imagen-educacion {
+    background-image: url('../img/educacion-hover.png');
+    transform:scale(1.2);
+}
+nav div:hover .imagen-experiencia-laboral {
+    background-image: url('../img/experiencia-laboral-hover.png');
+    transform:scale(1.2);
+}
+nav div:hover .icono.imagen-hobbie {
+    background-image: url('../img/hobbie-hover.png');
+    transform:scale(1.2);
+}
+nav div:hover .icono.imagen-portofolio {
+    background-image: url('../img/portofolio-hover.png');
+    transform:scale(1.2);
+}
+
+.redes{
+    width: 100%;
+    height:auto;
+    background:white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 0 0 100% 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.redes div {
+    border-radius:100%;
+}
+.redes a img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    opacity: .35;
+    -webkit-transition: all 550ms;
+    -moz-transition: all 550ms;
+    -ms-transition: all 550ms;
+    -o-transition: all 550ms;
+    transition: all 550ms;
+}
+.redes div:hover a img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    opacity: .95;
+    filter: blur();
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 50%;
+    transform:scale(1.05);
+}
+
+/********* C O N T E N I D O *************/
+/*SECCIÓN TITULO*/
+.seccion-titulo {
+    padding: 25px 10px 0 10px;
+    border-bottom: 1px solid #efefef;
+    margin-bottom:15px;
+    position: relative;
+}
+.linea {
+    position: relative;
+    top:13px;
+    left:12px;
+    width: 60px;
+    padding: 0 7px;
+    background:#fff;
+}
+
+div.titulo{
+    padding-top:25px;
+    font-size: 1.3rem;
+    font-weight:500;
+    text-transform: uppercase;
+    color:#444444;
+}
+.linea img{
+    width: 100%;
+}
+.nombre{
+    font-size:2rem;
+    font-weight: 400;
+    color:#444444;
+    transform:scaley(1.15);
+    margin:.5rem 0;
+}
+/*  T A B L A   D E   D A T O S */
+.tabla-datos{
+    margin-top: 20px;
+}
+.lista-datos{
+    float:left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    min-width: 307px;
+}
+.titulo-tablaDatos {
+    color:#666;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    letter-spacing: .2rem;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 10px;
+}
+.dato {
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    width: 35%;
+    padding: 8px 0;
+    background-color: #f9f9f9;
+    border-right: 1px solid #efefef;
+}
+.respuesta {
+    color: #666;
+    text-align: center;
+    display: inline-block;
+    width: 63%;
+    padding: 8px 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.lista-datos {
+    width: 48%;
+    float: left;
+    border: 1px solid #efefef;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left:-4px;
+ 
+}
+.item-datos{
+    border-bottom:1px solid #efefef;
+    min-width: 287px;
+}
+.item-datos:last-child{
+    border:none;
+    
+}
+.w-clearfix:before,
+.w-clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.w-clearfix:after {
+    clear: both;
+}
+
+/*   DATOS DE ESTUDIOS, EXPERIENCIA LABORAL, CURSOS   */
+.calendario {
+    width: 16px;
+    height: 18px;
+    float:left;
+    margin-right: 2px;
+}
+.fecha-texto {
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-left: 5px;
+    clear:both;
+}
+h6{
+    color:#444444;
+    margin-top:1.5rem;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+#estudios p, #cursos p, #empleos p{
+    margin-left:23px;
+    font-size:.8rem;
+}
+
+.firma{
+    
+}
+.firmita{
+    border-radius:100%;
+    width: 15rem;
+}
+
+/*   TIPEO TIPO DE MAQWUINA DE ESCRIBIR EWN TEXTO DE BIOGRAFIA*/
+.typed-cursor{
+    opacity: 0;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:0; }
+}
+
+/************************ tipeo *********************************/
+
