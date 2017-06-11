@@ -1,175 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CV DIGITAL</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,900" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/comportamiento.js"></script>
-    <script src="js/typed.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV DIGITAL</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700,900" rel="stylesheet">
 </head>
+
 <body>
-    <section id="perfil">
-        <img class="mi-foto" src="img/perfil.png">
-        <nav>
-            <div><a class="ripple" href="#sobre-mi"><span class="icono imagen-sobre-mi"></span><p>Sobre mi</p></a></div>
-            <div><a class="ripple" href="#estudios"><span class="icono imagen-educacion"></span><p>Estudios</p></a></div>
-            <div><a class="ripple" href="#cursos"><span class="icono imagen-experiencia-laboral"></span><p>Experiencia Laboral</p></a></div>
-            <div><a class="ripple" href="#hobbies"><span class="icono imagen-hobbie"></span><p>Hobbies</p></a></div>
-            <div><a class="ripple" href="#"><span class="icono imagen-portofolio"></span><p>Portofolio</p></a></div>
-            <div class="redes">
-                <div><a href="www.google.com.ar"><img src="img/redes-facebook.png" alt=""></a></div>
-                <div><a href="www.google.com.ar"><img src="img/redes-twitter.png" alt=""></a></div>
-                <div><a href="www.google.com.ar"><img src="img/redes-linkedin.png" alt=""></a></div>
-            </div>
-        </nav>
-    </section>
-          
-    <div id="contenedor">
-        <section id="contenido">
-            <section id="sobre-mi">
-                    <div class="seccion-titulo">
-                        <div class="titulo">Sobre mi</div>
-                        <div class="linea"><img src="img/line.png"></div>
-                    </div>
-                    <h1 class="nombre">Facundo Nicolás Orlando</h1>
-                     
-                      <!--<p>Aprender a programar es aprender a pensar. Esta metodología y herramientas nos permiten crear soluciones innovadoras a desafíos en cualquier área, con impacto que puede llegar a millones de personas.
+  <section id="perfil">
+    <img class="mi-foto" src="img/perfil.png">
+    <nav>
+      <div><a class="ripple" href="#sobre-mi"><span class="icono imagen-sobre-mi"></span><p>Sobre mi</p></a></div>
+      <div><a class="ripple" href="#estudios"><span class="icono imagen-educacion"></span><p>Estudios</p></a></div>
+      <div><a class="ripple" href="#cursos"><span class="icono imagen-experiencia-laboral"></span><p>Experiencia Laboral</p></a></div>
+      <div><a class="ripple" href="#hobbies"><span class="icono imagen-hobbie"></span><p>Hobbies</p></a></div>
+      <div><a class="ripple" href="#"><span class="icono imagen-portofolio"></span><p>Portofolio</p></a></div>
+      <div><a class="ripple" href="#"><span class="icono imagen-contacto"></span><p>Contacto</p></a></div>
+      <div class="redes">
+        <div>
+          <a href="www.google.com.ar"><img src="img/redes-facebook.png" alt=""></a>
+        </div>
+        <div>
+          <a href="www.google.com.ar"><img src="img/redes-twitter.png" alt=""></a>
+        </div>
+        <div>
+          <a href="www.google.com.ar"><img src="img/redes-linkedin.png" alt=""></a>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <div id="contenedor">
+    <section id="contenido">
+      <section id="sobre-mi">
+        <div class="seccion-titulo">
+          <div class="titulo">Sobre mi</div>
+          <div class="linea"><img src="img/line.png"></div>
+        </div>
+        <h1 class="nombre">Facundo Nicolás Orlando</h1>
+
+        <!--<p>Aprender a programar es aprender a pensar. Esta metodología y herramientas nos permiten crear soluciones innovadoras a desafíos en cualquier área, con impacto que puede llegar a millones de personas.
                       Programando podés ser un agente de cambio, podés modificar un sistema, hacer más ágil un proceso o más creativa una aplicación. Podés     hacer un mundo más inclusivo. Dejar tu marca.
                       MÁS INFORMACIÓN</p>-->
-    
-          <!-- T E X T O   D E   B I O G R A F I A -->
-                    <div class="texto">
-                        <div class="element"></div>
-                    </div>
-                    <div class="tabla-datos w-clearfix">
-                        <div class="titulo-tablaDatos">Datos Personales</div>
-                        <ul class="lista-datos">
-                            <li class="item-datos w-clearfix">
-                                <div class="dato">Nombre:</div>
-                                <div class="respuesta">Facundo Nicolás Orlando</div>
-                            </li>
-                            <li class="item-datos w-clearfix">
-                                <div class="dato">Dni:</div>
-                                <div class="respuesta">40.993.530</div>
-                            </li>
-                            <li class="item-datos w-clearfix">
-                                <div class="dato">Edad:</div>
-                                <div class="respuesta">18 años</div>
-                            </li>
-                            <li class="item-datos w-clearfix">
-                                <div class="dato">Dirección:</div>
-                                <div class="respuesta">Gral. Manuel A. Rodriguez 1991</div>
-                            </li>
-                        </ul>
-                        <ul class="lista-datos">
-                            <li class="item-datos w-clearfix">
-                                <div class="dato">Email:</div>
-                                <div class="respuesta">facundo.orlando@hotmail.com</div>
-                            </li>
-                            <li class="item-datos w-clearfix">
-                                <div class="dato">Teléfono:</div>
-                                <div class="respuesta">+54 115 804 7928</div>
-                            </li>
-                            <li class="item-datos w-clearfix">
-                                <div class="dato">Skype:</div>
-                                <div class="respuesta">faquu.ao</div>
-                            </li>
-                            <li class="item-datos w-clearfix">
-                                <div class="dato">Cod. Postal:</div>
-                                <div class="respuesta">1416</div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section id="estudios">
-                    <div class="seccion-titulo">
-                        <div class="titulo">Estudios cursados</div>
-                        <div class="linea"><img src="img/line.png"></div>
-                    </div>
-                    <h6>Perito mercantil con orientacion contable impositiva</h6>
-                    <div class="fecha"><img class="calendario" src="img/calendar.png">
-                        <div class="fecha-texto">Graduación 2015</div>
-                    </div>
-                        <p><b>Lugar</b>: Comecial n°20 D.E 14- Juan A. Garcia</p>
 
-                    
-                </section>
-                <section id="cursos">
-                    <div class="seccion-titulo">
-                        <div class="titulo">Cursos realizados</div>
-                        <div class="linea"><img src="img/line.png"></div>
-                    </div>
-                    <h6>Curso de Inglés</h6>
-                    <div class="fecha"><img class="calendario" src="img/calendar.png">
-                        <div class="fecha-texto">De: 3/2016 - continua...</div>
-                    </div>
-                        <p><b>Lugar</b>: Escuela 16 D.E 14- Enrique Ferreyra</p>
-                        <p>Estoy en el 2° año de un curso de ingles del gobierno de la ciudad. La duración es de <b>4 años</b>.</p>
-                        
-                    <h6>Clases particulares de Inglés</h6>
-                    <div class="fecha"><img class="calendario" src="img/calendar.png">
-                        <div class="fecha-texto">De: 3/2016 - continua...</div>
-                    </div>
-                        <p><b>Lugar</b>: Maestra particular</p>
-                        <p>Como Plus voy a clases particulares de Ingles para tomar clases de 2 puntos de vista.</p>
-                        
-                    <h6>Curso de Front-End</h6>
-                    <div class="fecha"><img class="calendario" src="img/calendar.png">
-                        <div class="fecha-texto">De: 8/2016 - 12/2016</div>
-                    </div>
-                        <p><b>Titulo</b>: Desarrollador Front-End Jr.</p>
-                        <p>Fue un curso muy didactico, muy entretenido el cual aprendi muchisimo gracias a la forma que se dicto y a los mentores que tuve.</p>
-                </section>
-                <section id="empleos">
-                     <div class="seccion-titulo">
-                        <div class="titulo">Experiencia Laboral</div>
-                        <div class="linea"><img src="img/line.png"></div>
-                    </div>
-                    <h6>Student Success Representative - <b>Acamica S.A</b></h6>
-                    <div class="fecha"><img class="calendario" src="img/calendar.png">
-                        <div class="fecha-texto">De: 02/01/2017 - continua...</div>
-                    </div>
-                        <p><b>Lugar</b>: el salvador 4052</p>
-                        <p>Mi cargo fue como <b>Student Success Representative</b> y <b>Assistant technical assessor</b>, dando soporte al cliente, lider de la comunidad teniendo 5 moderadores a cargo y siendo asistente en el proyecto "Acamica Plus".</p>    
-                    
-                    <h6>Entrenador - <b>Arcos Dorados S.A</b></h6>
-                    <div class="fecha"><img class="calendario" src="img/calendar.png">
-                        <div class="fecha-texto">De: 15/11/2014 - 01/01/2017</div>
-                    </div>
-                        <p><b>Lugar</b>: Cuenca 3224</p>
-                        <p>Era entrenador en Mc Donald's en la sucursal de Villa del Parque.</p>
-                        
-                    
-                    <h6>Crew - <b>Arcos Dorados S.A</b></h6>
-                    <div class="fecha"><img class="calendario" src="img/calendar.png">
-                        <div class="fecha-texto">De: 19/06/2014 - 15/11/2014</div>
-                    </div>
-                        <p><b>Lugar</b>: Cuenca 3224</p>
-                        <p>Crew en Mc Donald's en la sucursal de Villa del Parque.</p>    
-                        
-                    <h6>Cajero / aprendiz - <b>Cultura Carne</b></h6>
-                    <div class="fecha"><img class="calendario" src="img/calendar.png">
-                        <div class="fecha-texto">De: 2/2013 al 4/2014</div>
-                    </div>
-                        <p><b>Lugar</b>: Benito Juarez 3363</p>
-                        <p>Una carniceria familiar el cual era aprendiz haciendo cosas basicas y estando en la caja.</p>   
-                </section>
-                <section id="hobbies">
-                     <div class="seccion-titulo">
-                        <div class="titulo">Hobbies</div>
-                        <div class="linea"><img src="img/line.png"></div>
-                    </div>
-                        <div class="muestraHobbie"></div>
-                        <div class="muestraHobbie"></div>
-                        <div class="muestraHobbie"></div>
-                        
-                   </section>
-        </section>
-    </div>
+        <!-- T E X T O   D E   B I O G R A F I A -->
+        <div class="texto">
+          <div class="element"></div>
+        </div>
+        <div class="tabla-datos w-clearfix">
+          <div class="titulo-tablaDatos">Datos Personales</div>
+          <ul class="lista-datos">
+            <li class="item-datos w-clearfix">
+              <div class="dato">Nombre:</div>
+              <div class="respuesta">Facundo Nicolás Orlando</div>
+            </li>
+            <li class="item-datos w-clearfix">
+              <div class="dato">Dni:</div>
+              <div class="respuesta">40.993.530</div>
+            </li>
+            <li class="item-datos w-clearfix">
+              <div class="dato">Edad:</div>
+              <div class="respuesta">19 años</div>
+            </li>
+            <li class="item-datos w-clearfix">
+              <div class="dato">Dirección:</div>
+              <div class="respuesta">Gral. Manuel A. Rodriguez 1991</div>
+            </li>
+          </ul>
+          <ul class="lista-datos">
+            <li class="item-datos w-clearfix">
+              <div class="dato">Email:</div>
+              <div class="respuesta">facundo.orlando@hotmail.com</div>
+            </li>
+            <li class="item-datos w-clearfix">
+              <div class="dato">Teléfono:</div>
+              <div class="respuesta">+54 115 804 7928</div>
+            </li>
+            <li class="item-datos w-clearfix">
+              <div class="dato">Skype:</div>
+              <div class="respuesta">faquu.ao</div>
+            </li>
+            <li class="item-datos w-clearfix">
+              <div class="dato">Cod. Postal:</div>
+              <div class="respuesta">1416</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="estudios">
+        <div class="seccion-titulo">
+          <div class="titulo">Estudios cursados</div>
+          <div class="linea"><img src="img/line.png"></div>
+        </div>
+        <h6>Perito mercantil con orientacion contable impositiva</h6>
+        <div class="fecha"><img class="calendario" src="img/calendar.png">
+          <div class="fecha-texto">Graduación 2015</div>
+        </div>
+        <p><b>Lugar</b>: Comecial n°20 D.E 14- Juan A. Garcia</p>
 
+
+      </section>
+      <section id="cursos">
+        <div class="seccion-titulo">
+          <div class="titulo">Cursos realizados</div>
+          <div class="linea"><img src="img/line.png"></div>
+        </div>
+        <h6>Curso de Inglés</h6>
+        <div class="fecha"><img class="calendario" src="img/calendar.png">
+          <div class="fecha-texto">De: 3/2016 - continua...</div>
+        </div>
+        <p><b>Lugar</b>: Escuela 16 D.E 14- Enrique Ferreyra</p>
+        <p>Estoy en el 2° año de un curso de ingles del gobierno de la ciudad. La duración es de <b>4 años</b>.</p>
+
+        <h6>Clases particulares de Inglés</h6>
+        <div class="fecha"><img class="calendario" src="img/calendar.png">
+          <div class="fecha-texto">De: 3/2016 - continua...</div>
+        </div>
+        <p><b>Lugar</b>: Maestra particular</p>
+        <p>Como Plus voy a clases particulares de Ingles para tomar clases de 2 puntos de vista.</p>
+
+        <h6>Curso de Front-End</h6>
+        <div class="fecha"><img class="calendario" src="img/calendar.png">
+          <div class="fecha-texto">De: 8/2016 - 12/2016</div>
+        </div>
+        <p><b>Titulo</b>: Desarrollador Front-End Jr.</p>
+        <p>Fue un curso muy didactico, muy entretenido el cual aprendi muchisimo gracias a la forma que se dicto y a los mentores que tuve.</p>
+      </section>
+      <section id="empleos">
+        <div class="seccion-titulo">
+          <div class="titulo">Experiencia Laboral</div>
+          <div class="linea"><img src="img/line.png"></div>
+        </div>
+        <h6>Student Success Representative - <b>Acamica S.A</b></h6>
+        <div class="fecha"><img class="calendario" src="img/calendar.png">
+          <div class="fecha-texto">De: 02/01/2017 - continua...</div>
+        </div>
+        <p><b>Lugar</b>: <a href="https://www.google.com.ar/maps/place/El+Salvador+4052,+C1175ACF+CABA/@-34.5927681,-58.4199473,3a,75y,177.92h,85.56t/data=!3m7!1e1!3m5!1sfzz79C7y_By6KdG-ano8ow!2e0!6s%2F%2Fgeo3.ggpht.com%2Fcbk%3Fpanoid%3Dfzz79C7y_By6KdG-ano8ow%26output%3Dthumbnail%26cb_client%3Dsearch.TACTILE.gps%26thumb%3D2%26w%3D86%26h%3D86%26yaw%3D193.15366%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m5!3m4!1s0x95bcca7e632398b9:0xc0a7c73d2c440252!8m2!3d-34.592868!4d-58.4199791!6m1!1e1">El Salvador 4052</a></p>
+        <p>Mi cargo fue como <b>Student Success Representative</b> y <b>Assistant technical assessor</b>, dando soporte al cliente, lider de la comunidad teniendo 5 moderadores a cargo y siendo asistente en el proyecto "Acamica Plus".</p>
+
+        <h6>Entrenador - <b>Arcos Dorados S.A</b></h6>
+        <div class="fecha"><img class="calendario" src="img/calendar.png">
+          <div class="fecha-texto">De: 15/11/2014 - 01/01/2017</div>
+        </div>
+        <p><b>Lugar</b>: <a href="https://www.google.com.ar/maps/@-34.6004073,-58.4960127,3a,75y,249.17h,90.95t/data=!3m6!1e1!3m4!1sW9yicr6cKQf9M0R-w6aqsg!2e0!7i13312!8i6656!6m1!1e1">Cuenca 3224</a></p>
+        <p>Era entrenador en Mc Donald's en la sucursal de Villa del Parque.</p>
+
+
+        <h6>Crew - <b>Arcos Dorados S.A</b></h6>
+        <div class="fecha"><img class="calendario" src="img/calendar.png">
+          <div class="fecha-texto">De: 19/06/2014 - 15/11/2014</div>
+        </div>
+        <p><b>Lugar</b>: <a href="https://www.google.com.ar/maps/@-34.6004073,-58.4960127,3a,75y,249.17h,90.95t/data=!3m6!1e1!3m4!1sW9yicr6cKQf9M0R-w6aqsg!2e0!7i13312!8i6656!6m1!1e1">Cuenca 3224</a></p>
+        <p>Crew en Mc Donald's en la sucursal de Villa del Parque.</p>
+
+        <h6>Cajero / aprendiz - <b>Cultura Carne</b></h6>
+        <div class="fecha"><img class="calendario" src="img/calendar.png">
+          <div class="fecha-texto">De: 2/2013 al 4/2014</div>
+        </div>
+        <p><b>Lugar</b>: <a href="https://www.google.com.ar/maps/place/Benito+Ju%C3%A1rez+3363,+C1417BLW+CABA/@-34.6095262,-58.5143313,3a,75y,53.93h,81.76t/data=!3m6!1e1!3m4!1s-FpfY7MQYhRDW1MuL-ch5A!2e0!7i13312!8i6656!4m5!3m4!1s0x95bcb7d3e03f487f:0x695929a1c7806c50!8m2!3d-34.6094859!4d-58.514309!6m1!1e1"> Benito Juarez 3363</a></p>
+        <p>Una carniceria familiar el cual era aprendiz haciendo cosas basicas y estando en la caja.</p>
+      </section>
+      <section id="hobbies">
+        <div class="seccion-titulo">
+          <div class="titulo">Hobbies</div>
+          <div class="linea"><img src="img/line.png"></div>
+        </div>
+        <div id="contenidoHobbies">
+          <div class="muestraHobbie"><img src="img/artesmarciales.svg"></div>
+          <div class="muestraHobbie"><img src="img/basquet.svg"></div>
+          <div class="muestraHobbie"><img src="img/diseñar.svg"></div>
+          <div class="muestraHobbie"><img src="img/diseñar.svg"></div>
+        </div>
+      </section>
+      <section id="portofolio">
+        <div class="seccion-titulo">
+          <div class="titulo">Portofolio</div>
+          <div class="linea"><img src="img/line.png"></div>
+        </div>
+      </section>
+      <section id="contacto">
+        <div class="seccion-titulo">
+          <div class="titulo">Contacto</div>
+          <div class="linea"><img src="img/line.png"></div>
+        </div>
+      </section>
+
+
+      <!--  FORMULARIOO -->
+
+      <!-- <h1 class="title">Formulario</h1>-->
+
+      <div class="contenedor-formulario">
+
+        <form action="" class="formulario" name="formulario_registro" method="get">
+
+          <div class="input-group">
+            <input type="text" id="nombre" name="nombre">
+            <label class="label" for="nombre">Nombre:</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="correo" name="correo">
+            <label class="label" for="correo">Correo:</label>
+          </div>
+
+
+          <input type="submit" id="btn-submit" value="Enviar">
+
+        </form>
+
+      </div>
+
+
+      <!-- -->
+    </section>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/comportamiento.js"></script>
+  <script src="js/typed.js"></script>
 </body>
+
 </html>
